@@ -732,7 +732,7 @@ except AttributeError:
 if jinja2.__version__ < '3.0.0' :
     contextfunction = jinja2.contextfunction
 else:
-    contextfunction =  jinja2.pass_context
+    contextfunction = jinja2.pass_context
 @contextfunction
 >>>>>>> 2c39d86265 (fix: jinja2 contextfuntion base on version)
 def show_full_context(ctx):

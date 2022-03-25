@@ -452,10 +452,15 @@ jinja2==2.11.3
     #   tempora
 jaraco.text==3.7.0
     # via jaraco.collections
+<<<<<<< HEAD
 jinja2==3.1.0
 >>>>>>> fb3033f032 (Use the correct Markup from jinja for each version)
+=======
+jinja2==3.0.3
+>>>>>>> bb610f761e (Fix requested feedback)
     # via
     #   -r requirements/base.txt
+    #   -r requirements/static/ci/docs.in
     #   ansible-core
     #   junos-eznc
     #   moto

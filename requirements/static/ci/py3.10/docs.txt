@@ -442,8 +442,18 @@ ipaddress==1.0.23
 isodate==0.6.0
     # via msrest
 jaraco.functools==2.0
+<<<<<<< HEAD
     # via tempora
 jinja2==2.11.3
+=======
+    # via
+    #   cheroot
+    #   jaraco.text
+    #   tempora
+jaraco.text==3.7.0
+    # via jaraco.collections
+jinja2==3.1.0
+>>>>>>> fb3033f032 (Use the correct Markup from jinja for each version)
     # via
     #   -r requirements/base.txt
     #   ansible-core

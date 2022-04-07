@@ -714,6 +714,7 @@ def method_call(obj, f_name, *f_args, **f_kwargs):
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @jinja2.contextfunction
 =======
 if jinja2.__version__ < "3.0.0":
@@ -727,6 +728,13 @@ except AttributeError:
 
 @contextfunction
 >>>>>>> fb3033f032 (Use the correct Markup from jinja for each version)
+=======
+if jinja2.__version__ < '3.0.0' :
+    contextfunction = jinja2.contextfunction
+else:
+    contextfunction =  jinja2.pass_context
+@contextfunction
+>>>>>>> 2c39d86265 (fix: jinja2 contextfuntion base on version)
 def show_full_context(ctx):
     return salt.utils.data.simple_types_filter(
         {key: value for key, value in ctx.items()}
